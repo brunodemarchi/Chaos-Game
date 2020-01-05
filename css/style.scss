@@ -1,0 +1,40 @@
+body {
+  background-color: #d3d3d3;
+}
+
+#gameWrapper {
+  canvas {
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.3);
+  }
+
+  #gameConfig {
+    float: left;
+    margin: 20px;
+
+    button {
+      width: 200px;
+      font-size: 20px;
+      display: block;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    label {
+      font-size: 20px;
+
+      p {
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+
+    input[type=range] {
+      width: 200px;
+    }
+  }
+}
+
+

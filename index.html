@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Chaos Game - Inspired by <a href="https://www.youtube.com/watch?v=kbKtFN71Lfs">this video</a></h1>
+<div id="gameWrapper">
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameConfig">
+        <button id="startButton" disabled onclick="chaosGame.startGame()">Start</button>
+        <button onclick="chaosGame.reset(true)">Clear all</button>
+        <button onclick="chaosGame.reset(false)">Clear black circles</button>
+        <div class="range"><label for="circlesSecond">Circles per Second: <p class="inputValue">1</p></label><input id="circlesSecond" type="range" min="1" max="250" value="1"></div>
+        <div class="range"><label for="travelDistance">Travel Distance: <p class="inputValue">50%</p></label><input id="travelDistance" type="range" min="1" max="100" value="50"></div>
+    </div>
+</div>
+<script src="js/circle.js"></script>
+<script src="js/config.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
